@@ -1,4 +1,5 @@
 package com.cg.workshop;
+
 import org.junit.*;
 
 public class HotelReservationTest {
@@ -65,5 +66,13 @@ public class HotelReservationTest {
         Hotel cheapestBestRatedHotel = hotelReservationMain.findCheapestBestRatedHotelByWeekdayRates("2020-01-01", "2020-12-31");
         Assert.assertEquals("Mahindra", cheapestBestRatedHotel.hotelName);
     }
-
+    //UC7
+    @Test
+    public void givenHotelList_WhenBestRatedHotelFound_ShouldBeTrue() {
+        hotelReservationMain.hotelList.add(new Hotel("ITC", 10000, 15000, "2020-01-25", "2020-01-26", 4));
+        hotelReservationMain.hotelList.add(new Hotel("Taj", 6000, 10000, "2020-02-12", "2020-02-14", 3));
+        hotelReservationMain.hotelList.add(new Hotel("Mahindra", 6000, 9500, "2020-11-01", "2020-11-04", 4));
+        Hotel cheapestBestRatedHotel = hotelReservationMain.findCheapestBestRatedHotelByWeekdayRates("2020-01-01", "2020-12-31");
+        Assert.assertEquals("Mahindra", cheapestBestRatedHotel.hotelName);
+    }
 }

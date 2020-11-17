@@ -1,4 +1,5 @@
 package com.cg.workshop;
+
 import java.util.*;
 
 public class HotelReservationMain {

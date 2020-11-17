@@ -1,5 +1,4 @@
 package com.cg.workshop;
-
 public class Hotel {
     public String hotelName;
     public double rate;

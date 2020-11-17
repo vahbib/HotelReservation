@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.workshop.HotelReservationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-17T15:55:32" hostname="DESKTOP-9T3G1G1" time="0.007">
+<testsuite name="com.cg.workshop.HotelReservationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-17T15:58:29" hostname="DESKTOP-9T3G1G1" time="0.008">
   <properties/>
-  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.007">
+  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.008">
     <failure message="java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at com.cg.workshop.HotelReservationTest.givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue(HotelReservationTest.java:50)
+	at com.cg.workshop.HotelReservationTest.givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue(HotelReservationTest.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
