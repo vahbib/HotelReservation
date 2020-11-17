@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.workshop.HotelReservationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-17T15:50:54" hostname="DESKTOP-9T3G1G1" time="0.011">
+<testsuite name="com.cg.workshop.HotelReservationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-11-17T15:55:32" hostname="DESKTOP-9T3G1G1" time="0.007">
   <properties/>
-  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.011">
+  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.007">
     <failure message="java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
