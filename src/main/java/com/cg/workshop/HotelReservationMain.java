@@ -29,9 +29,11 @@ public class HotelReservationMain {
 
     public Hotel findCheapestBestRatedHotelByWeekdayRates(String startDate, String endDate) {
         double bestRating = hotelList.stream()
+                .filter(h -> h.validate())
                 .filter(h -> h.startDate.compareTo(startDate) > 0 && h.endDate.compareTo(endDate) < 0)
                 .reduce((hotel1, hotel2) -> hotel1.rating > hotel2.rating ? hotel1 : hotel2).get().rating;
         Optional<Hotel> cheapestBestRatedHotel = hotelList.stream()
+                .filter(h -> h.validate())
                 .filter(h -> h.startDate.compareTo(startDate) > 0 && h.endDate.compareTo(endDate) < 0)
                 .filter(h -> h.rating == bestRating)
                 .reduce((hotel1, hotel2) -> hotel1.weekdayRate < hotel2.weekdayRate ? hotel1 : hotel2);

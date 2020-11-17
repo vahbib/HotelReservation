@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.workshop.HotelReservationTest" tests="11" skipped="0" failures="2" errors="0" timestamp="2020-11-17T16:07:58" hostname="DESKTOP-9T3G1G1" time="0.038">
+<testsuite name="com.cg.workshop.HotelReservationTest" tests="11" skipped="0" failures="2" errors="0" timestamp="2020-11-17T16:11:14" hostname="DESKTOP-9T3G1G1" time="0.028">
   <properties/>
-  <testcase name="givenSpecialRates_WhenAddedToHotel_ShouldBeEqual" classname="com.cg.workshop.HotelReservationTest" time="0.003"/>
+  <testcase name="givenSpecialRates_WhenAddedToHotel_ShouldBeEqual" classname="com.cg.workshop.HotelReservationTest" time="0.002"/>
   <testcase name="givenHotelList_WhenBestRatedHotelFound_ShouldBeTrue" classname="com.cg.workshop.HotelReservationTest" time="0.006"/>
-  <testcase name="givenHotelList_WhenCheapestBestRatedHotelInGivenDateRangeFound_ShouldBeTrue" classname="com.cg.workshop.HotelReservationTest" time="0.002"/>
-  <testcase name="givenCustomerType_WhenInvalid_ShouldThrowException" classname="com.cg.workshop.HotelReservationTest" time="0.003"/>
+  <testcase name="givenHotelList_WhenCheapestBestRatedHotelInGivenDateRangeFound_ShouldBeTrue" classname="com.cg.workshop.HotelReservationTest" time="0.001"/>
+  <testcase name="givenCustomerType_WhenInvalid_ShouldThrowException" classname="com.cg.workshop.HotelReservationTest" time="0.004"/>
   <testcase name="givenDate_WhenInvalid_ShouldThrowException" classname="com.cg.workshop.HotelReservationTest" time="0.001"/>
-  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.008">
-    <failure message="java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;
+  <testcase name="givenHotelList_WhenCheapestByWeekendAndWeekdayRatesFound_ShouldReturntrue" classname="com.cg.workshop.HotelReservationTest" time="0.006">
+    <failure message="java.lang.AssertionError: expected:&lt;Taj Palace&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj Palace&gt; but was:&lt;null&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -64,8 +64,8 @@
 </failure>
   </testcase>
   <testcase name="givenDetailsIncludingRatings_WhenHotelObjectCreated_ShouldNotBeNull" classname="com.cg.workshop.HotelReservationTest" time="0.0"/>
-  <testcase name="givenHotelList_ShouldReturnCheapestHotelInGivenDateRange" classname="com.cg.workshop.HotelReservationTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj&gt; but was:&lt;null&gt;
+  <testcase name="givenHotelList_ShouldReturnCheapestHotelInGivenDateRange" classname="com.cg.workshop.HotelReservationTest" time="0.001">
+    <failure message="java.lang.AssertionError: expected:&lt;Taj Palace&gt; but was:&lt;null&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;Taj Palace&gt; but was:&lt;null&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
@@ -123,7 +123,7 @@
   </testcase>
   <testcase name="givenDetails_WhenHotelObjectCreated_ShouldReturnTrue" classname="com.cg.workshop.HotelReservationTest" time="0.0"/>
   <testcase name="givenWeekendWeekdayRates_WhenHotelCreated_ShouldNotBeNull" classname="com.cg.workshop.HotelReservationTest" time="0.0"/>
-  <testcase name="givenHotelList_WhenCheapestBestRatedHotelInGivenDateRangeForRewardCustomerFound_ShouldBeTrue" classname="com.cg.workshop.HotelReservationTest" time="0.007"/>
+  <testcase name="givenHotelList_WhenCheapestBestRatedHotelInGivenDateRangeForRewardCustomerFound_ShouldBeTrue" classname="com.cg.workshop.HotelReservationTest" time="0.005"/>
   <system-out><![CDATA[Customer type specified is: 1)Regular  2)Reward
 Date format specified is : YYYY-MM-DD
 ]]></system-out>
