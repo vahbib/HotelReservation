@@ -1,5 +1,4 @@
 package com.cg.workshop;
-
 import org.junit.*;
 
 public class HotelReservationTest {
@@ -10,6 +9,7 @@ public class HotelReservationTest {
         hotelReservationMain = new HotelReservationMain();
     }
 
+    //UC1
     @Test
     public void givenDetails_WhenHotelObjectCreated_ShouldReturnTrue() {
         String hotelName = "ITC";
@@ -18,13 +18,26 @@ public class HotelReservationTest {
         Assert.assertTrue(hotel != null);
     }
 
+    //UC2
     @Test
-    public void givenHotelList_ShouldReturnCheapestHotelInGivenDateRange() {
+    public void givenHotelList_ShouldReturnCheapestHotelInGivenDateRange()
+    {
         hotelReservationMain.hotelList.add(new Hotel("ITC", 10000, "2020-01-25", "2020-01-26"));
         hotelReservationMain.hotelList.add(new Hotel("Taj", 6000, "2020-02-12", "2020-02-14"));
         hotelReservationMain.hotelList.add(new Hotel("Mahindra", 9000, "2020-11-01", "2020-11-04"));
         Hotel cheapestHotel = hotelReservationMain.findCheapestHotel("2020-01-01", "2020-12-31");
-        Assert.assertEquals("Taj", cheapestHotel.hotelName);
+        Assert.assertEquals("Mahindra", cheapestHotel.hotelName);
+    }
+    //UC3
+    @Test
+    public void givenWeekendWeekdayRates_WhenHotelCreated_ShouldNotBeNull()
+    {
+        Hotel hotel1 = new Hotel("ITC", 10000, 15000, "2020-01-25", "2020-01-26");
+        Hotel hotel2 = new Hotel("Taj", 6000, 10000, "2020-02-12", "2020-02-14");
+        Hotel hotel3 = new Hotel("Mahindra", 9000, 9500, "2020-11-01", "2020-11-04");
+        Assert.assertNotNull(hotel1);
+        Assert.assertNotNull(hotel2);
+        Assert.assertNotNull(hotel3);
     }
 }
 

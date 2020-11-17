@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.workshop.HotelReservationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-11-17T14:21:20" hostname="DESKTOP-9T3G1G1" time="0.005">
+<testsuite name="com.cg.workshop.HotelReservationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-11-17T14:26:48" hostname="DESKTOP-9T3G1G1" time="0.008">
   <properties/>
-  <testcase name="givenHotelList_ShouldReturnCheapestHotelInGivenDateRange" classname="com.cg.workshop.HotelReservationTest" time="0.004"/>
+  <testcase name="givenHotelList_ShouldReturnCheapestHotelInGivenDateRange" classname="com.cg.workshop.HotelReservationTest" time="0.006"/>
   <testcase name="givenDetails_WhenHotelObjectCreated_ShouldReturnTrue" classname="com.cg.workshop.HotelReservationTest" time="0.0"/>
+  <testcase name="givenWeekendWeekdayRates_WhenHotelCreated_ShouldNotBeNull" classname="com.cg.workshop.HotelReservationTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
