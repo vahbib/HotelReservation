@@ -1,4 +1,5 @@
 package com.cg.workshop;
+
 public class Hotel {
     public String hotelName;
     public double rate;
@@ -7,6 +8,8 @@ public class Hotel {
     public double weekdayRate;
     public double weekendRate;
     public int rating;
+    public double specialWeekdayRate;
+    public double specialWeekendRate;
 
     public Hotel(String hotelName, int weekdayRate) {
         this.hotelName = hotelName;
