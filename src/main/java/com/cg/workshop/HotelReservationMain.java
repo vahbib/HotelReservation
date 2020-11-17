@@ -18,6 +18,7 @@ public class HotelReservationMain {
     }
 
     //UC4
+
     public Hotel findCheapestHotelByWeekdayRates(String startDate, String endDate) {
         Optional<Hotel> cheapestHotel = hotelList.stream()
                 .filter(h -> h.startDate.compareTo(startDate) > 0 && h.endDate.compareTo(endDate) < 0)
